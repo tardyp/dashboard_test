@@ -1,0 +1,19 @@
+.container.mydashboard
+  // Create a table of builds organised by builders in columns
+  table.table(ng-repeat="(codebase, revisions) in codebases")
+    tr
+      th(colspan="2")
+        | {{codebase}}
+    tr
+      // Generate the table header with revisions
+      th
+        | Builder v / Revision
+      th(ng-repeat="(revision,value) in revisions")
+        | {{revision}}
+    tr(ng-repeat="builder in builders")
+      td {{builder.name}}
+      td(ng-repeat="(revision,value) in revisions")
+          div(ng-repeat="build in builds", ng-if="revision == build.properties.got_revision[0][codebase] && build.builderid == builder.builderid")
+            a(ui-sref='build({builder: builder.builderid, build: build.number})')
+                span.badge-status(ng-class="results2class(build, 'pulse')")
+                  | {{ build.number }}

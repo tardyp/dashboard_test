@@ -1,0 +1,18 @@
+{
+  "name": "dashboard_test",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Pierre Tardy",
+    "email": "tardyp@gmail.com",
+    "url": ""
+  },
+  "keywords": [],
+  "dependencies": {
+    "guanlecoja": "~0.8.0",
+    "gulp": "3.9.0"
+  },
+  "devDependencies": {},
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,15 @@
+{
+  "generator-buildbot-dashboard": {
+    "promptValues": {
+      "name": "dashboard_test",
+      "description": "",
+      "homepage": "",
+      "authorName": "Pierre Tardy",
+      "authorEmail": "tardyp@gmail.com",
+      "authorUrl": "",
+      "keywords": [
+        ""
+      ]
+    }
+  }
+}
